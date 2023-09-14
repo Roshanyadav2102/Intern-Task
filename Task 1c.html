@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-radius: 100px;
+      }
+      th,
+      td {
+        background-color: #96d4d4;
+      }
+      table {
+        background-color: #96d4d4;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      #rectangle {
+        height: 50px;
+        width: 80px;
+        border-style: solid;
+        border-color: green;
+        margin: 10px;
+      }
+      #oval {
+        height: 50px;
+        width: 100px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: green;
+        margin: 10px;
+      }
+      #crectangle {
+        height: 50px;
+        width: 80px;
+        border-radius: 10%;
+        border-style: solid;
+        border-color: green;
+        margin: 10px;
+      }
+      #ccrectangle {
+        height: 50px;
+        width: 80px;
+        border-radius: 30%;
+        border-style: solid;
+        border-color: green;
+        margin: 10px;
+      }
+      #cccrectangle {
+        height: 50px;
+        width: 80px;
+        /* background-color: green; */
+        border-style: solid;
+        border-color: green;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 25px;
+        /* padding: 10px; */
+        margin: 10px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    <br />
+    <div class="container">
+      <div id="rectangle"></div>
+      <div id="crectangle"></div>
+      <div id="ccrectangle"></div>
+      <div id="crectangle"></div>
+      <div id="rectangle"></div>
+      <div id="ccrectangle"></div>
+      <div id="oval"></div>
+      <div id="rectangle"></div>
+      <div id="cccrectangle"></div>
+    </div>
+  </body>
+</html>
